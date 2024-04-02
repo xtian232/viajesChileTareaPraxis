@@ -5,34 +5,20 @@
 
 #navbar {
 	top: 0;
-	z-index: 1000; /* Esto asegura que el menú esté por encima de otros elementos, como un carrusel */
+	z-index: 1000; /* Menu por encima */
 	transition: background-color 0.5s ease;
 	display: flex;
 	justify-content: space-evenly;
 }
 
 .navbar a {
-	color: white; /* Color del texto del menú */
-	transition: background-color 0.5s ease; /* Transición suave */
-}
-
-.navbar a:hover {
-	background-color: black; /* Cambia el fondo a negro al pasar el cursor */
-	color: white; /* Cambia el color del texto a blanco al pasar el cursor */
-}
-
-.navbar.scrolled a:hover {
-	background-color: rgba(
-		0,
-		234,
-		255,
-		0.943
-	); /* Cambia el fondo a 'aqua' al pasar el cursor cuando se ha desplazado hacia abajo */
-	color: white; /* Mantiene el color del texto en blanco al pasar el cursor cuando se ha desplazado hacia abajo */
+	color: white; /* Color del texto del menu */
+	transition: background-color 0.5s ease; /* Transicion*/
 }
 
 li {
-	font-size: 20px;
+	font-size: 30px;
+    text-align: right;
 }
 /********************** Navbar *********************/
 
@@ -41,8 +27,80 @@ li {
 /********************* Carrusel*********************/
 .carousel-item img {
 	width: 100%;		
-	height: auto;		/***altura maxima de las imagenes***/
+	height: auto;		/* altura maxima de las imagenes */
 	max-height: 740px;
 }
 /********************* Carrusel*********************/
 
+/****************** Linea horizontal *************/
+hr {
+	border: none;
+	border-top: 2px solid rgb(201, 191, 191);
+	margin: 20px 0;
+}
+/****************** Linea horizontal *************/
+
+
+/****************** Cuerpo *****************/
+.cuerpo {
+	border-left: 40px solid black; /* Borde a la izquierda */
+	border-right: 40px solid black; /* Borde a la derecha */
+	padding: 40px; /* Espacio interior para que el texto no esté pegado al borde */
+}
+/****************** Cuerpo *****************/
+
+
+
+/************* seccion 3 columnas ****************/
+#titulo {
+	background-color: aqua;
+	text-align: center;
+	height: 30px;	
+}
+
+i{
+	font-size: 30px;		/***tamanio de los iconoscon fondo celeste***/  
+	color: #fff;
+}
+/************* seccion 3 columnas ****************/
+
+
+/************* seccion 4 cards ****************/
+.card-body{
+	color: rgb(230, 236, 236);
+	background-color: rgb(18, 207, 240);
+}
+/************* seccion 4 cards ****************/
+
+
+/************* Formulario ****************/
+.formulario{
+}
+/************* Formulario ****************/
+
+
+
+
+/************* Footer ****************/
+footer {
+    background-color: rgb(18, 207, 240);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    display: flex;
+}
+
+.right a {
+    margin-left: 10px;
+}
+
+/************* Footer ****************/
