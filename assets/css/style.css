@@ -1,0 +1,48 @@
+/********************** Navbar *********************/
+#logo img {
+	max-width: 35px;
+}
+
+#navbar {
+	top: 0;
+	z-index: 1000; /* Esto asegura que el menú esté por encima de otros elementos, como un carrusel */
+	transition: background-color 0.5s ease;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.navbar a {
+	color: white; /* Color del texto del menú */
+	transition: background-color 0.5s ease; /* Transición suave */
+}
+
+.navbar a:hover {
+	background-color: black; /* Cambia el fondo a negro al pasar el cursor */
+	color: white; /* Cambia el color del texto a blanco al pasar el cursor */
+}
+
+.navbar.scrolled a:hover {
+	background-color: rgba(
+		0,
+		234,
+		255,
+		0.943
+	); /* Cambia el fondo a 'aqua' al pasar el cursor cuando se ha desplazado hacia abajo */
+	color: white; /* Mantiene el color del texto en blanco al pasar el cursor cuando se ha desplazado hacia abajo */
+}
+
+li {
+	font-size: 20px;
+}
+/********************** Navbar *********************/
+
+
+
+/********************* Carrusel*********************/
+.carousel-item img {
+	width: 100%;		
+	height: auto;		/***altura maxima de las imagenes***/
+	max-height: 740px;
+}
+/********************* Carrusel*********************/
+
